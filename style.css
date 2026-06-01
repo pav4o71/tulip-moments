@@ -6,6 +6,8 @@
   --color-text: #333333;
   --color-deep: #6a1b4d;
   --color-border: #f8dce8;
+  --shadow-soft: 0 4px 12px rgba(106, 27, 77, 0.08);
+  --shadow-featured: 0 7px 18px rgba(106, 27, 77, 0.16);
 }
 
 html {
@@ -139,6 +141,7 @@ button:focus-visible,
 .faq-section {
   background-color: var(--color-cream);
   border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
   border-radius: 12px;
 }
 
@@ -147,6 +150,7 @@ button:focus-visible,
 .ofw-section,
 .final-cta-section {
   background-color: var(--color-blush);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
@@ -229,6 +233,9 @@ button:focus-visible,
 .hero-section {
   text-align: center;
   padding: 60px 25px;
+  background-color: var(--color-blush);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
 }
 
 .hero-section > p {
@@ -302,6 +309,10 @@ button:focus-visible,
   margin-bottom: 0;
   color: var(--color-deep);
   font-weight: bold;
+  padding: 10px 14px;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
 }
 
 @media (max-width: 480px) {
@@ -339,6 +350,7 @@ button:focus-visible,
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 22px;
 }
 
 .package-card {
@@ -360,6 +372,17 @@ button:focus-visible,
   box-shadow: 0 6px 16px rgba(106, 27, 77, 0.12);
 }
 
+.package-card-featured {
+  border: 2px solid var(--color-accent);
+  box-shadow: var(--shadow-featured);
+}
+
+.package-card-featured .package-badge {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
 @media (max-width: 700px) {
   .package-card {
     flex: 1 1 100%;
@@ -373,6 +396,7 @@ button:focus-visible,
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 18px;
 }
 
 .includes-card {
@@ -380,7 +404,7 @@ button:focus-visible,
   align-items: flex-start;
   gap: 8px;
   background-color: var(--color-cream);
-  padding: 22px;
+  padding: 18px;
   min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: 12px;
@@ -432,6 +456,10 @@ button:focus-visible,
   background-color: var(--color-accent-dark);
 }
 
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
 .package-button:focus-visible {
   outline: 3px solid var(--color-deep);
   outline-offset: 3px;
@@ -466,6 +494,7 @@ button:focus-visible,
   color: white;
   padding: 30px;
   border-radius: 12px;
+  box-shadow: var(--shadow-featured);
   text-align: center;
 }
 
@@ -484,6 +513,7 @@ button:focus-visible,
   padding: 30px;
   border-radius: 12px;
   border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
 }
 
 form {
@@ -504,6 +534,7 @@ fieldset {
 
 legend {
   padding: 0 6px;
+  margin-top: 4px;
   color: var(--color-deep);
   font-weight: bold;
   font-size: 17px;
@@ -710,6 +741,10 @@ textarea:focus {
     padding: 18px;
   }
 
+  .package-card-featured {
+    box-shadow: var(--shadow-soft);
+  }
+
   .hero-trust-strip {
     font-size: 14px;
     line-height: 1.5;
@@ -767,6 +802,10 @@ textarea:focus {
   *::before,
   *::after {
     transition: none;
+  }
+
+  .cta-button:hover {
+    transform: none;
   }
 
   .package-card:hover,
