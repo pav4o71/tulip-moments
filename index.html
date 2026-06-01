@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulip Moments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#packages">Packages</a>
+  <a href="#preorder">Preorder</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<section id="home" class="hero-section">
+  <h1>Rare tulips, shown before they're delivered.</h1>
+
+  <p>
+    Preorder premium tulip bouquets in Metro Manila,
+    beautifully wrapped, personalized with your message,
+    previewed before delivery, and confirmed after arrival.
+  </p>
+
+  <img src="images/hero-tulips.jpg" alt="Premium tulip bouquet" class="hero-image">
+
+  <div class="hero-actions">
+    <a href="#preorder" class="hero-button-primary">Preorder Your Tulips</a>
+    <a href="#footer" class="hero-button-secondary">Message Us for Help</a>
+  </div>
+
+  <p>
+    Every bouquet includes a clear stem count,
+    preview photo, and delivery confirmation.
+  </p>
+</section>
+
+
+<section class="trust-section">
+  <h2>You’ll see your bouquet before it’s delivered.</h2>
+
+  <p>
+    Ordering flowers online should not feel uncertain.
+    Before your tulip bouquet is sent, we send you a real preview photo
+    so you can see the actual tulips, wrapping, stem count,
+    and message card.
+  </p>
+
+  <p>
+    No guessing. No hoping. You’ll see what is being sent.
+  </p>
+</section>
+
+
+<section class="why-tulips-section">
+  <h2>When roses feel too expected, tulips feel chosen.</h2>
+
+  <p>
+    Tulips feel soft, rare, and intentional — a thoughtful choice
+    for romantic surprises, birthdays, anniversaries, apologies,
+    proposals, and long-distance love.
+  </p>
+</section>
+
+<section class="preorder-section">
+  <h2>How Preorder Works</h2>
+
+  <p><strong>1. Choose your Tulip Moment</strong></p>
+  <p>Select Mini, Classic, or Grand.</p>
+
+  <p><strong>2. Share your delivery details</strong></p>
+  <p>Tell us who will receive the bouquet and when.</p>
+
+  <p><strong>3. Confirm your preorder</strong></p>
+  <p>We confirm availability and details before payment.</p>
+
+  <p><strong>4. See your bouquet before delivery</strong></p>
+  <p>We send a preview photo of your actual bouquet.</p>
+
+  <p><strong>5. Delivery and confirmation</strong></p>
+  <p>Your bouquet is delivered and confirmed.</p>
+</section>
+
+<section class="ofw-section">
+  <h2>Sending from abroad? You won’t be left guessing.</h2>
+
+  <p>
+    For long-distance love, proof matters. If you are ordering from outside Manila
+    or abroad, we help you send rare tulips with clear updates before and after
+    delivery. You will receive a bouquet preview photo before the gift is sent,
+    plus delivery confirmation once it arrives.
+  </p>
+
+  <p>You may be far away, but your gift can still feel close.</p>
+
+  <a href="#preorder" class="cta-button">Start Your Preorder</a>
+</section>
+
+<section id="packages" class="packages-section">
+  <h2>Choose Your Tulip Moment</h2>
+
+  <div class="packages-container">
+    <div class="package-card">
+        <img src="images/mini-tulip.jpg" alt="Mini tulip bouquet">
+      <h3 class="package-title">Mini</h3>
+      <p>10 tulip stems. A thoughtful gesture for simple moments.</p>
+      <button class="package-button">Choose Mini</button>
+    </div>
+
+    <div class="package-card">
+        <img src="images/classic-tulip.jpg" alt="Classic tulip bouquet">
+      <h3 class="package-title">Classic</h3>
+      <p>20 tulip stems. Our most popular bouquet for meaningful occasions.</p>
+      <button class="package-button">Choose Classic</button>
+    </div>
+
+    <div class="package-card">
+        <img src="images/grand-tulip.jpg" alt="Grand tulip bouquet">
+      <h3 class="package-title">Grand</h3>
+      <p>30 tulip stems. Designed to make a lasting impression.</p>
+      <button class="package-button">Choose Grand</button>
+    </div>
+  </div>
+</section>
+
+<section class="includes-section">
+  <h2>What every bouquet includes</h2>
+
+  <div class="includes-container">
+    <div class="includes-card">Clear stem count</div>
+    <div class="includes-card">Elegant wrapping</div>
+    <div class="includes-card">Personalized message card</div>
+    <div class="includes-card">Bouquet preview before delivery</div>
+    <div class="includes-card">Delivery confirmation after arrival</div>
+  </div>
+</section>
+
+<section id="preorder" class="preorder-form-section">
+  <h2>Preorder Your Tulips</h2>
+
+  <form>
+
+    <label for="sender-name">Sender Name</label>
+    <input type="text" id="sender-name" name="sender-name" required>
+
+    <label for="phone">Contact Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="contact-channel">Preferred Contact Channel</label>
+    <select id="contact-channel" name="contact-channel" required>
+      <option value="">Select a Contact Channel</option>
+      <option>Instagram DM</option>
+      <option>Facebook Messenger</option>
+      <option>Viber</option>
+      <option>WhatsApp</option>
+      <option>SMS / Call</option>
+    </select>
+
+    <label for="ordering-abroad">Ordering from abroad?</label>
+    <select id="ordering-abroad" name="ordering-abroad" required>
+      <option>No</option>
+      <option>Yes</option>
+    </select>
+
+    <label for="recipient-name">Recipient Name</label>
+    <input type="text" id="recipient-name" name="recipient-name" required>
+
+    <label for="address">Delivery Address</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="package">Package</label>
+    <select id="package" name="package" required>
+      <option value="">Select a Package</option>
+      <option>Mini</option>
+      <option>Classic</option>
+      <option>Grand</option>
+    </select>
+
+    <label for="preferred-color">Preferred Tulip Color</label>
+    <input type="text" id="preferred-color" name="preferred-color">
+
+    <label for="backup-color">Backup Tulip Color</label>
+    <input type="text" id="backup-color" name="backup-color">
+
+    <label for="delivery-date">Delivery Date</label>
+    <input type="date" id="delivery-date" name="delivery-date" required>
+
+    <label for="message-card">Message Card Text</label>
+    <textarea id="message-card" name="message-card" rows="5"></textarea>
+
+    <div class="trust-confirmations">
+      <label for="confirm-preorder">
+        <input type="checkbox" id="confirm-preorder" name="confirm-preorder" required>
+        I understand this is a preorder.
+      </label>
+      <label for="confirm-color-availability">
+        <input type="checkbox" id="confirm-color-availability" name="confirm-color-availability" required>
+        I understand tulip colors are subject to availability.
+      </label>
+      <label for="confirm-preview">
+        <input type="checkbox" id="confirm-preview" name="confirm-preview" required>
+        I understand I will receive a bouquet preview before delivery.
+      </label>
+      <label for="confirm-delivery-details">
+        <input type="checkbox" id="confirm-delivery-details" name="confirm-delivery-details" required>
+        I confirm delivery details are correct.
+      </label>
+    </div>
+
+    <button type="submit">Submit Preorder</button>
+
+  </form>
+</section>
+
+<section id="faq" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Will I see the bouquet before delivery?</h3>
+  <p>
+    Yes. Every preorder includes a bouquet preview photo before delivery.
+  </p>
+
+  <h3>Why is this preorder only?</h3>
+  <p>
+    Preordering helps us prepare fresh tulips and confirm availability before delivery.
+  </p>
+
+  <h3>What does stem count mean?</h3>
+  <p>
+    Stem count is the number of individual tulip stems included in your bouquet.
+  </p>
+
+  <h3>Can I order from abroad?</h3>
+  <p>
+    Yes. We accept long-distance orders and provide updates before and after delivery.
+  </p>
+
+  <h3>What if my preferred tulip color is unavailable?</h3>
+  <p>
+    We will let you know and confirm an available color with you before preparing your bouquet.
+  </p>
+</section>
+
+<section class="final-cta-section">
+  <h2>Send something rare, thoughtful, and reassuringly real.</h2>
+
+  <p>
+    Preorder your tulip bouquet today and see it before it is delivered.
+  </p>
+
+  <a href="#preorder" class="cta-button">Start Your Preorder</a>
+</section>
+
+<footer id="footer" class="footer-section">
+  <h2>Tulip Moments</h2>
+
+  <p>
+    Rare tulips. Real proof. Beautifully delivered.
+  </p>
+
+  <p>
+    Premium preorder tulip bouquets in Metro Manila,
+    prepared with care, personalized with your message,
+    previewed before delivery, and sent with confirmation.
+  </p>
+
+  <p>
+    Message us through Instagram DM, Facebook Messenger, Viber, or WhatsApp
+    for preorder assistance.
+  </p>
+
+  <p>
+    Serving selected Metro Manila delivery areas by preorder.
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
