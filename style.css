@@ -12,6 +12,17 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+section,
+.footer-section {
+  scroll-margin-top: 110px;
+}
+
 .skip-link {
   position: absolute;
   top: -50px;
@@ -54,6 +65,7 @@ h1 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 18px;
+  text-wrap: balance;
 }
 
 h2 {
@@ -61,6 +73,7 @@ h2 {
   font-size: 28px;
   margin-top: 0;
   margin-bottom: 16px;
+  text-wrap: balance;
 }
 
 h3 {
@@ -194,6 +207,15 @@ button:focus-visible,
   padding: 60px 25px;
 }
 
+.hero-section > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-trust-strip {
+  max-width: 720px;
+}
+
 .hero-image {
   display: block;
   width: 100%;
@@ -225,6 +247,7 @@ button:focus-visible,
 .hero-section .hero-button-primary {
   padding: 14px 24px;
   background-color: var(--color-accent);
+  color: white;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2);
 }
@@ -270,6 +293,7 @@ button:focus-visible,
 
 .package-badge {
   display: inline-block;
+  align-self: flex-start;
   padding: 4px 9px;
   border-radius: 999px;
   background-color: var(--color-blush);
@@ -291,6 +315,7 @@ button:focus-visible,
   flex-direction: column;
   background-color: var(--color-cream);
   padding: 22px;
+  min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(106, 27, 77, 0.08);
@@ -322,6 +347,7 @@ button:focus-visible,
   gap: 8px;
   background-color: var(--color-cream);
   padding: 22px;
+  min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(106, 27, 77, 0.08);
@@ -384,6 +410,23 @@ button:focus-visible,
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
+.ofw-section .cta-button {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-section {
+  text-align: center;
+}
+
+.final-cta-section p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-section {
   background-color: var(--color-deep);
   color: white;
@@ -395,6 +438,13 @@ button:focus-visible,
 .footer-section h2 {
   color: white;
 }
+
+.footer-section p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .preorder-form-section {
   background-color: var(--color-cream);
   padding: 30px;
@@ -414,6 +464,7 @@ fieldset {
   padding: 16px;
   background-color: var(--color-cream);
   border: 1px solid var(--color-border);
+  min-width: 0;
   border-radius: 8px;
 }
 
@@ -421,6 +472,7 @@ legend {
   padding: 0 6px;
   color: var(--color-deep);
   font-weight: bold;
+  font-size: 17px;
 }
 
 label {
@@ -438,7 +490,15 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 6px;
+  background-color: white;
   font-size: 16px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--color-accent);
 }
 
 textarea {
@@ -450,6 +510,7 @@ select:focus,
 textarea:focus {
   outline: 3px solid var(--color-deep);
   outline-offset: 2px;
+  border-color: var(--color-deep);
   background-color: var(--color-cream);
 }
 
@@ -484,19 +545,24 @@ textarea:focus {
 
 .trust-confirmations input {
   width: auto;
+  flex-shrink: 0;
 }
 
 .preorder-form-section button {
   margin-top: 20px;
+  font-size: 16px;
 }
+
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 25px;
   padding: 20px;
   margin-bottom: 30px;
   background-color: var(--color-cream);
   border-radius: 12px;
+  border: 1px solid var(--color-border);
 
   position: sticky;
   top: 10px;
@@ -548,6 +614,10 @@ textarea:focus {
     padding: 14px;
   }
 
+  .navbar a {
+    padding: 5px 7px;
+  }
+
   .hero-section {
     padding: 40px 18px;
   }
@@ -558,6 +628,7 @@ textarea:focus {
 
   fieldset {
     padding: 12px;
+    margin-bottom: 14px;
   }
 
   .preorder-step {
@@ -570,6 +641,10 @@ textarea:focus {
 
   .includes-card {
     padding: 16px;
+  }
+
+  .package-card {
+    padding: 18px;
   }
 
   .hero-trust-strip {
@@ -614,6 +689,12 @@ textarea:focus {
   }
 }
 
+@media (max-width: 380px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -623,5 +704,10 @@ textarea:focus {
   *::before,
   *::after {
     transition: none;
+  }
+
+  .package-card:hover,
+  .includes-card:hover {
+    transform: none;
   }
 }
