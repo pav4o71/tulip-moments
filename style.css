@@ -38,6 +38,8 @@ section,
 
 .skip-link:focus {
   top: 12px;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 body {
@@ -151,18 +153,15 @@ button:focus-visible,
 .preorder-steps {
   display: grid;
   margin-top: 0;
+  margin-bottom: 18px;
   padding-left: 28px;
   list-style-position: outside;
+  gap: 12px;
 }
 
 .preorder-step::marker {
   color: var(--color-accent);
   font-weight: bold;
-}
-
-.preorder-steps {
-  gap: 12px;
-  margin-bottom: 18px;
 }
 
 .preorder-step {
@@ -175,6 +174,10 @@ button:focus-visible,
 
 .preorder-step p {
   margin: 0;
+}
+
+.preorder-step p + p {
+  margin-top: 4px;
 }
 
 .faq-list {
@@ -196,10 +199,12 @@ button:focus-visible,
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 .faq-item dd {
   margin: 0;
+  line-height: 1.6;
 }
 
 .faq-item:last-child {
@@ -303,6 +308,10 @@ button:focus-visible,
   .hero-actions {
     flex-direction: column;
   }
+
+  .preorder-steps {
+    padding-left: 24px;
+  }
 }
 
 .package-title {
@@ -368,7 +377,7 @@ button:focus-visible,
 
 .includes-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   background-color: var(--color-cream);
   padding: 22px;
@@ -596,6 +605,7 @@ textarea:focus {
 
 .preorder-form-section button {
   margin-top: 20px;
+  cursor: pointer;
   font-size: 16px;
 }
 
