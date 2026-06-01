@@ -551,8 +551,8 @@ textarea:focus {
 }
 
 .trust-confirmations-intro {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  font-size: 16px;
 }
 
 .trust-confirmations label {
