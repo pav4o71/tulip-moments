@@ -175,6 +175,9 @@
 
   <form>
 
+    <fieldset>
+      <legend>Your Details</legend>
+
     <label for="sender-name">Sender Name</label>
     <input type="text" id="sender-name" name="sender-name" required>
 
@@ -193,6 +196,11 @@
       <option>SMS / Call</option>
     </select>
 
+    </fieldset>
+
+    <fieldset>
+      <legend>Recipient and Delivery</legend>
+
     <label for="ordering-abroad">Ordering from abroad?</label>
     <p class="form-helper-text">Choose Yes if you are arranging the gift from outside the Philippines or outside Manila.</p>
     <select id="ordering-abroad" name="ordering-abroad" required>
@@ -207,6 +215,11 @@
     <label for="address">Delivery Address</label>
     <p class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
     <input type="text" id="address" name="address" required>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Bouquet Preferences</legend>
 
     <label for="package">Package</label>
     <select id="package" name="package" required>
@@ -231,6 +244,8 @@
     <label for="message-card">Message Card Text</label>
     <p class="form-helper-text">Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
     <textarea id="message-card" name="message-card" rows="5"></textarea>
+
+    </fieldset>
 
     <div class="trust-confirmations">
       <p class="trust-confirmations-intro">Please review these details before sending your preorder request.</p>
