@@ -66,9 +66,9 @@
   <h2>When roses feel too expected, tulips feel chosen.</h2>
 
   <p>
-    Tulips feel soft, rare, and intentional — a thoughtful choice
-    for romantic surprises, birthdays, anniversaries, apologies,
-    proposals, and long-distance love.
+    Tulips feel soft, rare, and intentional. Their understated beauty
+    makes them a thoughtful choice for romantic surprises, birthdays,
+    anniversaries, apologies, proposals, and long-distance love.
   </p>
 </section>
 
@@ -111,6 +111,7 @@
 <section id="packages" class="packages-section">
   <h2>Choose Your Tulip Moment</h2>
   <p>Mini for a sweet gesture. Classic for the signature gift. Grand for milestone moments.</p>
+  <p>Each package shows its tulip stem count clearly so you can choose with confidence.</p>
 
   <div class="packages-container">
     <div class="package-card">
@@ -142,6 +143,7 @@
 
 <section class="includes-section">
   <h2>What every bouquet includes</h2>
+  <p>A complete gifting experience, prepared with clarity and care.</p>
 
   <div class="includes-container">
     <div class="includes-card">Clear stem count</div>
@@ -149,6 +151,8 @@
     <div class="includes-card">Personalized message card</div>
     <div class="includes-card">Bouquet preview before delivery</div>
     <div class="includes-card">Delivery confirmation after arrival</div>
+    <div class="includes-card">Human support for preorder questions</div>
+    <div class="includes-card">Delivery details confirmed before payment</div>
   </div>
 </section>
 
@@ -163,11 +167,11 @@
     <input type="text" id="sender-name" name="sender-name" required>
 
     <label for="phone">Contact Number</label>
-    <p>Please include the correct number where we can confirm your preorder.</p>
+    <p class="form-helper-text">Please include the correct number where we can confirm your preorder.</p>
     <input type="tel" id="phone" name="phone" required>
 
     <label for="contact-channel">Preferred Contact Channel</label>
-    <p>Choose where you prefer to receive availability and delivery updates.</p>
+    <p class="form-helper-text">Choose where you prefer to receive availability and delivery updates.</p>
     <select id="contact-channel" name="contact-channel" required>
       <option value="">Select a Contact Channel</option>
       <option>Instagram DM</option>
@@ -178,16 +182,18 @@
     </select>
 
     <label for="ordering-abroad">Ordering from abroad?</label>
+    <p class="form-helper-text">Choose Yes if you are arranging the gift from outside the Philippines or outside Manila.</p>
     <select id="ordering-abroad" name="ordering-abroad" required>
       <option>No</option>
       <option>Yes</option>
     </select>
 
     <label for="recipient-name">Recipient Name</label>
+    <p class="form-helper-text">Enter the name of the person receiving the bouquet.</p>
     <input type="text" id="recipient-name" name="recipient-name" required>
 
     <label for="address">Delivery Address</label>
-    <p>Include the city, barangay, building name, or landmarks if available.</p>
+    <p class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
     <input type="text" id="address" name="address" required>
 
     <label for="package">Package</label>
@@ -199,22 +205,23 @@
     </select>
 
     <label for="preferred-color">Preferred Tulip Color</label>
-    <p>We will try to match your preferred color based on market availability.</p>
+    <p class="form-helper-text">We will try to match your preferred color based on market availability.</p>
     <input type="text" id="preferred-color" name="preferred-color">
 
     <label for="backup-color">Backup Tulip Color</label>
-    <p>This helps us suggest an alternative if your first choice is unavailable.</p>
+    <p class="form-helper-text">This helps us suggest an alternative if your first choice is unavailable.</p>
     <input type="text" id="backup-color" name="backup-color">
 
     <label for="delivery-date">Delivery Date</label>
-    <p>We will confirm if your requested date is available before payment.</p>
+    <p class="form-helper-text">We will confirm if your requested date is available before payment.</p>
     <input type="date" id="delivery-date" name="delivery-date" required>
 
     <label for="message-card">Message Card Text</label>
-    <p>Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
+    <p class="form-helper-text">Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
     <textarea id="message-card" name="message-card" rows="5"></textarea>
 
     <div class="trust-confirmations">
+      <p class="trust-confirmations-intro">Please review these details before sending your preorder request.</p>
       <label for="confirm-preorder">
         <input type="checkbox" id="confirm-preorder" name="confirm-preorder" required>
         I understand this is a preorder.
@@ -253,12 +260,12 @@
 
   <h3>What does stem count mean?</h3>
   <p>
-    Stem count is the number of individual tulip stems included in your bouquet.
+    Stem count is the number of individual tulip stems included in your bouquet. Each package card shows its included stem count clearly.
   </p>
 
   <h3>Can I order from abroad?</h3>
   <p>
-    Yes. We accept long-distance orders and provide updates before and after delivery.
+    Yes. We accept long-distance orders. You will receive a bouquet preview photo before delivery and confirmation after arrival.
   </p>
 
   <h3>What if my preferred tulip color is unavailable?</h3>
@@ -308,6 +315,8 @@
   <p>
     Serving selected Metro Manila delivery areas by preorder.
   </p>
+
+  <a href="#preorder" class="cta-button">Start Your Preorder</a>
 </footer>
 
 
