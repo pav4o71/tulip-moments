@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
   <a href="#home">Home</a>
   <a href="#packages">Packages</a>
   <a href="#preorder">Preorder</a>
@@ -39,7 +39,7 @@
 
 
 <section class="trust-section">
-  <h2>You’ll see your bouquet before it’s delivered.</h2>
+  <h2>You&rsquo;ll see your bouquet before it&rsquo;s delivered.</h2>
 
   <p>
     Ordering flowers online should not feel uncertain.
@@ -49,7 +49,7 @@
   </p>
 
   <p>
-    No guessing. No hoping. You’ll see what is being sent.
+    No guessing. No hoping. You&rsquo;ll see what is being sent.
   </p>
 
   <ul class="trust-list">
@@ -106,7 +106,7 @@
 </section>
 
 <section class="ofw-section">
-  <h2>Sending from abroad? You won’t be left guessing.</h2>
+  <h2>Sending from abroad? You won&rsquo;t be left guessing.</h2>
 
   <p>
     For long-distance love, proof matters. If you are ordering from outside Manila
@@ -179,11 +179,11 @@
       <legend>Your Details</legend>
 
     <label for="sender-name">Sender Name</label>
-    <input type="text" id="sender-name" name="sender-name" required>
+    <input type="text" id="sender-name" name="sender-name" autocomplete="name" required>
 
     <label for="phone">Contact Number</label>
     <p class="form-helper-text">Please include the correct number where we can confirm your preorder.</p>
-    <input type="tel" id="phone" name="phone" required>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
     <label for="contact-channel">Preferred Contact Channel</label>
     <p class="form-helper-text">Choose where you prefer to receive availability and delivery updates.</p>
@@ -210,11 +210,11 @@
 
     <label for="recipient-name">Recipient Name</label>
     <p class="form-helper-text">Enter the name of the person receiving the bouquet.</p>
-    <input type="text" id="recipient-name" name="recipient-name" required>
+    <input type="text" id="recipient-name" name="recipient-name" autocomplete="name" required>
 
     <label for="address">Delivery Address</label>
     <p class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
-    <input type="text" id="address" name="address" required>
+    <input type="text" id="address" name="address" autocomplete="street-address" required>
 
     </fieldset>
 
@@ -231,11 +231,11 @@
 
     <label for="preferred-color">Preferred Tulip Color</label>
     <p class="form-helper-text">We will try to match your preferred color based on market availability.</p>
-    <input type="text" id="preferred-color" name="preferred-color">
+    <input type="text" id="preferred-color" name="preferred-color" autocomplete="off">
 
     <label for="backup-color">Backup Tulip Color</label>
     <p class="form-helper-text">This helps us suggest an alternative if your first choice is unavailable.</p>
-    <input type="text" id="backup-color" name="backup-color">
+    <input type="text" id="backup-color" name="backup-color" autocomplete="off">
 
     <label for="delivery-date">Delivery Date</label>
     <p class="form-helper-text">We will confirm if your requested date is available before payment.</p>
