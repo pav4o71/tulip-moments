@@ -475,6 +475,11 @@ legend {
   font-size: 17px;
 }
 
+fieldset:focus-within {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.08);
+}
+
 label {
   margin-top: 15px;
   margin-bottom: 5px;
@@ -519,6 +524,22 @@ textarea:focus {
   margin-bottom: 4px;
   color: #6b5b63;
   font-size: 14px;
+}
+
+.required-fields-note {
+  margin-top: 0;
+  color: #6b5b63;
+  font-size: 14px;
+}
+
+.required-marker {
+  color: var(--color-accent);
+}
+
+.optional-marker {
+  color: #6b5b63;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .trust-confirmations {

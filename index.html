@@ -178,19 +178,20 @@
   <p>Serving selected Metro Manila delivery areas by preorder. We will confirm delivery availability before payment.</p>
 
   <form>
+    <p class="required-fields-note">Fields marked <span aria-hidden="true">*</span> are required.</p>
 
     <fieldset>
       <legend>Your Details</legend>
 
-    <label for="sender-name">Sender Name</label>
+    <label for="sender-name">Sender Name <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="sender-name-help" class="form-helper-text">Use the name we should use when confirming your preorder.</p>
     <input type="text" id="sender-name" name="sender-name" autocomplete="name" aria-describedby="sender-name-help" required>
 
-    <label for="phone">Contact Number</label>
+    <label for="phone">Contact Number <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="phone-help" class="form-helper-text">Please include the correct number where we can confirm your preorder.</p>
     <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-help" required>
 
-    <label for="contact-channel">Preferred Contact Channel</label>
+    <label for="contact-channel">Preferred Contact Channel <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="contact-channel-help" class="form-helper-text">Choose where you prefer to receive availability and delivery updates.</p>
     <select id="contact-channel" name="contact-channel" aria-describedby="contact-channel-help" required>
       <option value="">Select a Contact Channel</option>
@@ -206,18 +207,18 @@
     <fieldset>
       <legend>Recipient and Delivery</legend>
 
-    <label for="ordering-abroad">Ordering from abroad?</label>
+    <label for="ordering-abroad">Ordering from abroad? <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="ordering-abroad-help" class="form-helper-text">Choose Yes if you are arranging the gift from outside the Philippines or outside Manila.</p>
     <select id="ordering-abroad" name="ordering-abroad" aria-describedby="ordering-abroad-help" required>
       <option>No</option>
       <option>Yes</option>
     </select>
 
-    <label for="recipient-name">Recipient Name</label>
+    <label for="recipient-name">Recipient Name <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="recipient-name-help" class="form-helper-text">Enter the name of the person receiving the bouquet.</p>
     <input type="text" id="recipient-name" name="recipient-name" autocomplete="name" aria-describedby="recipient-name-help" required>
 
-    <label for="address">Delivery Address</label>
+    <label for="address">Delivery Address <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="address-help" class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
     <input type="text" id="address" name="address" autocomplete="street-address" aria-describedby="address-help" required>
 
@@ -226,7 +227,7 @@
     <fieldset>
       <legend>Bouquet Preferences</legend>
 
-    <label for="package">Package</label>
+    <label for="package">Package <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="package-help" class="form-helper-text">Choose the bouquet size that best fits your occasion.</p>
     <select id="package" name="package" aria-describedby="package-help" required>
       <option value="">Select a Package</option>
@@ -235,26 +236,26 @@
       <option>Grand</option>
     </select>
 
-    <label for="preferred-color">Preferred Tulip Color</label>
+    <label for="preferred-color">Preferred Tulip Color <span class="optional-marker">(optional)</span></label>
     <p id="preferred-color-help" class="form-helper-text">We will try to match your preferred color based on market availability.</p>
     <input type="text" id="preferred-color" name="preferred-color" autocomplete="off" aria-describedby="preferred-color-help">
 
-    <label for="backup-color">Backup Tulip Color</label>
+    <label for="backup-color">Backup Tulip Color <span class="optional-marker">(optional)</span></label>
     <p id="backup-color-help" class="form-helper-text">This helps us suggest an alternative if your first choice is unavailable.</p>
     <input type="text" id="backup-color" name="backup-color" autocomplete="off" aria-describedby="backup-color-help">
 
-    <label for="delivery-date">Delivery Date</label>
+    <label for="delivery-date">Delivery Date <span class="required-marker" aria-hidden="true">*</span></label>
     <p id="delivery-date-help" class="form-helper-text">We will confirm if your requested date is available before payment.</p>
     <input type="date" id="delivery-date" name="delivery-date" aria-describedby="delivery-date-help" required>
 
-    <label for="message-card">Message Card Text</label>
+    <label for="message-card">Message Card Text <span class="optional-marker">(optional)</span></label>
     <p id="message-card-help" class="form-helper-text">Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
     <textarea id="message-card" name="message-card" rows="5" autocomplete="off" aria-describedby="message-card-help"></textarea>
 
     </fieldset>
 
     <div class="trust-confirmations">
-      <p class="trust-confirmations-intro">Please review these details before sending your preorder request.</p>
+      <p class="trust-confirmations-intro">Please review and confirm all four required details before sending your preorder request.</p>
       <label for="confirm-preorder">
         <input type="checkbox" id="confirm-preorder" name="confirm-preorder" required>
         I understand this is a preorder.
@@ -273,9 +274,9 @@
       </label>
     </div>
 
-    <button type="submit">Send Preorder Request</button>
+    <button type="submit" aria-describedby="form-submit-note">Send Preorder Request</button>
 
-    <p class="form-submit-note">This website form is currently for preorder details only. Please message us for assistance after sending your request.</p>
+    <p id="form-submit-note" class="form-submit-note">This website form is currently for preorder details only. Please message us for assistance after sending your request.</p>
 
   </form>
 </section>
