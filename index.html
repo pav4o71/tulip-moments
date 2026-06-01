@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<a href="#preorder" class="skip-link">Skip to preorder form</a>
+
     <nav class="navbar" aria-label="Primary navigation">
   <a href="#home">Home</a>
   <a href="#packages">Packages</a>
@@ -25,7 +27,7 @@
     previewed before delivery, and confirmed after arrival.
   </p>
 
-  <img src="images/hero-tulips.jpg" alt="Premium tulip bouquet" class="hero-image">
+  <img src="images/hero-tulips.jpg" alt="Premium tulip bouquet" class="hero-image" decoding="async">
 
   <div class="hero-actions">
     <a href="#preorder" class="hero-button-primary">Preorder Your Tulips</a>
@@ -127,7 +129,7 @@
 
   <div class="packages-container">
     <div class="package-card">
-        <img src="images/mini-tulip.jpg" alt="Mini tulip bouquet">
+        <img src="images/mini-tulip.jpg" alt="Mini tulip bouquet" loading="lazy" decoding="async">
       <span class="package-badge">Sweet Gesture</span>
       <h3 class="package-title">Mini</h3>
       <p>10 tulip stems. A thoughtful gesture for simple moments.</p>
@@ -135,7 +137,7 @@
     </div>
 
     <div class="package-card">
-        <img src="images/classic-tulip.jpg" alt="Classic tulip bouquet">
+        <img src="images/classic-tulip.jpg" alt="Classic tulip bouquet" loading="lazy" decoding="async">
       <span class="package-badge">Signature Choice</span>
       <h3 class="package-title">Classic</h3>
       <p>20 tulip stems. Our most popular bouquet for meaningful occasions.</p>
@@ -144,7 +146,7 @@
     </div>
 
     <div class="package-card">
-        <img src="images/grand-tulip.jpg" alt="Grand tulip bouquet">
+        <img src="images/grand-tulip.jpg" alt="Grand tulip bouquet" loading="lazy" decoding="async">
       <span class="package-badge">Milestone Statement</span>
       <h3 class="package-title">Grand</h3>
       <p>30 tulip stems. Designed to make a lasting impression.</p>
@@ -179,15 +181,16 @@
       <legend>Your Details</legend>
 
     <label for="sender-name">Sender Name</label>
-    <input type="text" id="sender-name" name="sender-name" autocomplete="name" required>
+    <p id="sender-name-help" class="form-helper-text">Use the name we should use when confirming your preorder.</p>
+    <input type="text" id="sender-name" name="sender-name" autocomplete="name" aria-describedby="sender-name-help" required>
 
     <label for="phone">Contact Number</label>
-    <p class="form-helper-text">Please include the correct number where we can confirm your preorder.</p>
-    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+    <p id="phone-help" class="form-helper-text">Please include the correct number where we can confirm your preorder.</p>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-help" required>
 
     <label for="contact-channel">Preferred Contact Channel</label>
-    <p class="form-helper-text">Choose where you prefer to receive availability and delivery updates.</p>
-    <select id="contact-channel" name="contact-channel" required>
+    <p id="contact-channel-help" class="form-helper-text">Choose where you prefer to receive availability and delivery updates.</p>
+    <select id="contact-channel" name="contact-channel" aria-describedby="contact-channel-help" required>
       <option value="">Select a Contact Channel</option>
       <option>Instagram DM</option>
       <option>Facebook Messenger</option>
@@ -202,19 +205,19 @@
       <legend>Recipient and Delivery</legend>
 
     <label for="ordering-abroad">Ordering from abroad?</label>
-    <p class="form-helper-text">Choose Yes if you are arranging the gift from outside the Philippines or outside Manila.</p>
-    <select id="ordering-abroad" name="ordering-abroad" required>
+    <p id="ordering-abroad-help" class="form-helper-text">Choose Yes if you are arranging the gift from outside the Philippines or outside Manila.</p>
+    <select id="ordering-abroad" name="ordering-abroad" aria-describedby="ordering-abroad-help" required>
       <option>No</option>
       <option>Yes</option>
     </select>
 
     <label for="recipient-name">Recipient Name</label>
-    <p class="form-helper-text">Enter the name of the person receiving the bouquet.</p>
-    <input type="text" id="recipient-name" name="recipient-name" autocomplete="name" required>
+    <p id="recipient-name-help" class="form-helper-text">Enter the name of the person receiving the bouquet.</p>
+    <input type="text" id="recipient-name" name="recipient-name" autocomplete="name" aria-describedby="recipient-name-help" required>
 
     <label for="address">Delivery Address</label>
-    <p class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
-    <input type="text" id="address" name="address" autocomplete="street-address" required>
+    <p id="address-help" class="form-helper-text">Include the city, barangay, building name, or landmarks if available.</p>
+    <input type="text" id="address" name="address" autocomplete="street-address" aria-describedby="address-help" required>
 
     </fieldset>
 
@@ -222,7 +225,8 @@
       <legend>Bouquet Preferences</legend>
 
     <label for="package">Package</label>
-    <select id="package" name="package" required>
+    <p id="package-help" class="form-helper-text">Choose the bouquet size that best fits your occasion.</p>
+    <select id="package" name="package" aria-describedby="package-help" required>
       <option value="">Select a Package</option>
       <option>Mini</option>
       <option>Classic</option>
@@ -230,20 +234,20 @@
     </select>
 
     <label for="preferred-color">Preferred Tulip Color</label>
-    <p class="form-helper-text">We will try to match your preferred color based on market availability.</p>
-    <input type="text" id="preferred-color" name="preferred-color" autocomplete="off">
+    <p id="preferred-color-help" class="form-helper-text">We will try to match your preferred color based on market availability.</p>
+    <input type="text" id="preferred-color" name="preferred-color" autocomplete="off" aria-describedby="preferred-color-help">
 
     <label for="backup-color">Backup Tulip Color</label>
-    <p class="form-helper-text">This helps us suggest an alternative if your first choice is unavailable.</p>
-    <input type="text" id="backup-color" name="backup-color" autocomplete="off">
+    <p id="backup-color-help" class="form-helper-text">This helps us suggest an alternative if your first choice is unavailable.</p>
+    <input type="text" id="backup-color" name="backup-color" autocomplete="off" aria-describedby="backup-color-help">
 
     <label for="delivery-date">Delivery Date</label>
-    <p class="form-helper-text">We will confirm if your requested date is available before payment.</p>
-    <input type="date" id="delivery-date" name="delivery-date" required>
+    <p id="delivery-date-help" class="form-helper-text">We will confirm if your requested date is available before payment.</p>
+    <input type="date" id="delivery-date" name="delivery-date" aria-describedby="delivery-date-help" required>
 
     <label for="message-card">Message Card Text</label>
-    <p class="form-helper-text">Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
-    <textarea id="message-card" name="message-card" rows="5"></textarea>
+    <p id="message-card-help" class="form-helper-text">Your message will be included with the bouquet. Please review spelling and names carefully before sending.</p>
+    <textarea id="message-card" name="message-card" rows="5" autocomplete="off" aria-describedby="message-card-help"></textarea>
 
     </fieldset>
 
