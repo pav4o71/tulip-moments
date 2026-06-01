@@ -103,6 +103,39 @@ button:focus-visible,
   border-radius: 12px;
 }
 
+.preorder-steps {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.preorder-step {
+  padding: 14px;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.preorder-step p {
+  margin: 0;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+  padding: 14px;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.faq-item h3 {
+  margin-top: 0;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
+
 .cta-button {
   display: inline-block;
   padding: 12px 20px;
@@ -445,6 +478,14 @@ textarea:focus {
 
   .preorder-form-section {
     padding: 20px;
+  }
+
+  .preorder-step {
+    padding: 12px;
+  }
+
+  .faq-item {
+    padding: 12px;
   }
 
   .form-helper-text {
