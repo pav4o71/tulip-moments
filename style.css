@@ -150,6 +150,17 @@ button:focus-visible,
 
 .preorder-steps {
   display: grid;
+  margin-top: 0;
+  padding-left: 28px;
+  list-style-position: outside;
+}
+
+.preorder-step::marker {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.preorder-steps {
   gap: 12px;
   margin-bottom: 18px;
 }
@@ -166,6 +177,11 @@ button:focus-visible,
   margin: 0;
 }
 
+.faq-list {
+  margin: 0;
+  padding: 0;
+}
+
 .faq-item {
   margin-bottom: 12px;
   padding: 14px;
@@ -175,12 +191,15 @@ button:focus-visible,
   border-radius: 8px;
 }
 
-.faq-item h3 {
+.faq-item dt {
+  color: var(--color-deep);
+  font-weight: bold;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.faq-item p {
-  margin-bottom: 0;
+.faq-item dd {
+  margin: 0;
 }
 
 .faq-item:last-child {
@@ -308,6 +327,9 @@ button:focus-visible,
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .package-card {
@@ -339,6 +361,9 @@ button:focus-visible,
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .includes-card {
