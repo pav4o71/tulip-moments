@@ -241,8 +241,27 @@ button:focus-visible,
 }
 
 .package-button {
+  display: inline-block;
+  padding: 12px 20px;
   margin-top: 10px;
   margin-right: 0;
+  border: none;
+  background-color: var(--color-accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.package-button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.package-button:focus-visible {
+  outline: 3px solid var(--color-deep);
+  outline-offset: 3px;
 }
 
 .package-card img {
