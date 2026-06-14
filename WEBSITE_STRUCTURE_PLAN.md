@@ -307,7 +307,29 @@ The current project is a beginner-built static HTML/CSS website. Do not rebuild 
 
 ---
 
-## 9. Codex Workflow for Every Task
+## 9. Future Public-Safe Planning Page
+
+A real private admin panel is not approved. Do not add authentication, saved state, backend behavior, order management, or admin panel functionality.
+
+A possible future `internal-plan.html` could only be a static HTML/CSS public-safe planning page. Do not create this page yet and do not add JavaScript.
+
+If a file is published in the GitHub Pages repository, it may be publicly reachable even when it is not linked from the website. Do not describe the page as private, secure, hidden, or protected.
+
+The page must not contain:
+
+- customer or order data
+- passwords or payment information
+- supplier notes
+- private pricing or private business details
+- secrets or anything sensitive
+
+Suitable content is limited to public-safe checklists, launch tasks, content tasks, and placeholders for business decisions that still need approval.
+
+The page should not be linked from the public navbar, footer, or other website sections unless explicitly approved later.
+
+---
+
+## 10. Codex Workflow for Every Task
 
 ### Step 1 - Planning only
 
@@ -327,7 +349,7 @@ Commit and push only after visual review and explicit instruction.
 
 ---
 
-## 10. Final Website Rule
+## 11. Final Website Rule
 
 Every major section should answer one of these questions:
 
